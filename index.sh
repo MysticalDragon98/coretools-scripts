@@ -17,7 +17,7 @@ display_free_cpu () {
     print "\x1b[1mFree CPU:\x1b[0m" $free_cpu%
 }
 
+display_free_cpu
+
 print "  \x1b[36m?\x1b[0m To view the current services status, use the `\x1b[33mvm services\x1b[0m` command"
 print "  \x1b[36m?\x1b[0m To view the system status, use the `\x1b[33mvm status\x1b[0m` command"
-
-display_free_cpu
