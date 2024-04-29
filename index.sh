@@ -31,6 +31,7 @@ display_free_disk () {
 
 display_free_cpu
 display_free_memory
+display_free_disk
 
 print ""
 print "  \x1b[36m?\x1b[0m To view the current services status, use the \`\x1b[33mvm services\x1b[0m\` command"
