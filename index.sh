@@ -1,5 +1,5 @@
 #!/bin/bash
-source lib/modules/stdout/print.sh
+source ./lib/modules/stdout/print.sh
 #* Imports
 
 clear
