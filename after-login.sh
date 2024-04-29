@@ -12,3 +12,5 @@ login () {
 }
 
 login admin
+cd ~
+clear
