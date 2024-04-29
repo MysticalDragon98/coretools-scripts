@@ -7,7 +7,10 @@ login () {
     fi
 
     if [ "$current_user" != "$user" ]; then
-        sudo su $user -c "cd ~; clear"
+        sudo su -s /bin/bash - $user <<EOF
+cd /home/$user
+exec bash
+EOF
     fi
 }
 
