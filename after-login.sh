@@ -7,10 +7,8 @@ login () {
     fi
 
     if [ "$current_user" != "$user" ]; then
-        sudo su $user
+        sudo su $user -c "cd ~; clear"
     fi
 }
 
 login admin
-cd /home/admin
-clear
