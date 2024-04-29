@@ -2,7 +2,7 @@ login () {
     local user=$1
     local current_user=$(whoami)
 
-    if [ "$current_user" == "root" ]; then
+    if [ "$current_user" = "root" ]; then
         return
     fi
 
