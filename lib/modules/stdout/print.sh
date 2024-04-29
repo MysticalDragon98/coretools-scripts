@@ -1,5 +1,5 @@
 print () {
     local message="$@"
 
-    printf "${message}\033[0m\n"
+    printf "%b\n" "${message}\033[0m"
 }
