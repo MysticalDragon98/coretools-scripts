@@ -1,6 +1,8 @@
 #!/bin/bash
-source ./lib/modules/stdout/print.sh
+source "$(dirname "${BASH_SOURCE[0]}")/lib/modules/stdout/print.sh
 #* Imports
+
+echo $(dirname "${BASH_SOURCE[0]}")
 
 clear
 
