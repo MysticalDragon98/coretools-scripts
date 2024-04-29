@@ -12,5 +12,5 @@ login () {
 }
 
 login admin
-cd ~
+cd /home/admin
 clear
