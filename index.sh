@@ -1,3 +1,6 @@
 clear
 
-echo "Welcome to the dexcarga service"
+if [ -f ~/welcome.txt ]; then
+    cat ~/welcome.txt
+else
+fi
