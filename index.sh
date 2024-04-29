@@ -11,5 +11,5 @@ display_free_cpu () {
     echo "\x1b[1mFree CPU:\x1b[0m" $free_cpu%
 }
 
-echo "  \x1b[36m?\x1b[0m To view the current services status, use the `\x1b[33mvm services\x1b[0m` command"
-echo "  \x1b[36m?\x1b[0m To view the system status, use the `\x1b[33mvm status\x1b[0m` command"
+echo "  \x1b[36m?\x1b[0m To view the current services status, use the `\x1b[33mvm services\x1b[0m` command" | while IFS= read -r line; do echo -e "$line"; done
+echo "  \x1b[36m?\x1b[0m To view the system status, use the `\x1b[33mvm status\x1b[0m` command" | while IFS= read -r line; do echo -e "$line"; done
