@@ -17,7 +17,14 @@ display_free_cpu () {
     print "  \x1b[1mFree CPU:\x1b[0m" $free_cpu%
 }
 
+display_free_memory () {
+    local free_memory=$(free | grep Mem | awk '{ print $3/$2 * 100.0 }')
+
+    print "  \x1b[1mFree Memory:\x1b[0m" $free_memory%
+}
+
 display_free_cpu
+display_free_memory
 
 print ""
 print "  \x1b[36m?\x1b[0m To view the current services status, use the \`\x1b[33mvm services\x1b[0m\` command"
