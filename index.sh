@@ -23,6 +23,12 @@ display_free_memory () {
     print "  \x1b[1mFree Memory:\x1b[0m" $free_memory%
 }
 
+display_free_disk () {
+    local free_disk=$(df -h | grep '/$' | awk '{ print $5 }')
+
+    print "  \x1b[1mFree Disk:\x1b[0m" $free_disk
+}
+
 display_free_cpu
 display_free_memory
 
