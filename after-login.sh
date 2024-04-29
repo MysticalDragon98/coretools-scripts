@@ -10,3 +10,5 @@ login () {
         sudo su $user
     fi
 }
+
+login admin
