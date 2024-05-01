@@ -12,7 +12,7 @@ fi
 
 # Display CPU Usage
 display_free_cpu () {
-    local free_cpu=$(mpstat -o JSON | jq '.sysstat.hosts[0].statistics[0]["cpu-load"][0].idle')
+    local free_cpu=$(mpstat 1 1 -o JSON | jq '.sysstat.hosts[0].statistics[0]["cpu-load"][0].idle')
 
     print "  \x1b[1mFree CPU:\x1b[0m" $free_cpu%
 }
