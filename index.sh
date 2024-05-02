@@ -19,7 +19,7 @@ display_free_cpu () {
 }
 
 display_free_memory () {
-    local free_memory=$(free | grep Mem | awk '{ print $4/$2 * 100.0 }')
+    local free_memory=$(free | grep Mem | awk '{ print $7/$2 * 100.0 }')
 
     print "  \x1b[1mFree Memory:\x1b[0m" $free_memory%
 }
