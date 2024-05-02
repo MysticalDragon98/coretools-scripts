@@ -2,6 +2,7 @@
 source $(dirname "${BASH_SOURCE[0]}")/lib/modules/stdout/print.sh
 #* Imports
 
+PATH="$PATH:/home/admin/.bin"
 echo $(dirname "${BASH_SOURCE[0]}")
 
 clear
