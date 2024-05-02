@@ -1,6 +1,6 @@
 #!/bin/bash
 source $(dirname "${BASH_SOURCE[0]}")/lib/modules/stdout/print.sh
-. ./lib/modules/utils/alias.sh
+source ./lib/modules/utils/alias.sh
 #* Imports
 
 PATH="$PATH:/home/admin/.bin"
