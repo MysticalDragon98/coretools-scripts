@@ -1,2 +1,2 @@
-alias supervisorctl="s"
-alias systemctl="ctl"
+alias s="supervisorctl"
+alias ctl="systemctl"
