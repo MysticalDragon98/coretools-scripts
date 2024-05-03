@@ -11,6 +11,10 @@ if [ -f ~/welcome.txt ]; then
     cat welcome.txt | while IFS= read -r line; do echo -e "$line"; done
 fi
 
+if [ -f ~/.ps1 ]; then
+    source ~/.ps1
+fi
+
 # Display CPU Usage
 display_free_cpu () {
     local free_cpu=$(mpstat 1 1 -o JSON | jq '.sysstat.hosts[0].statistics[0]["cpu-load"][0].idle')
