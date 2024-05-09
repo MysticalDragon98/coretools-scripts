@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ### Added
-- [2024-05-02T23:56:04] Added alias `ctl` for `systemctl`
-- [2024-05-03T04:55:50] Added alias `s` for `supervisor`
-- [2024-05-03T03:22:27] Added /home/admin/.bin to the path
+- [2024-05-03T04:56:04] Added alias `ctl` for `systemctl`
+- [2024-05-03T09:55:50] Added alias `s` for `supervisor`
+- [2024-05-03T08:22:27] Added /home/admin/.bin to the path
+
+
+### Changed
+- [2024-05-09T10:49:27] Removed CPU display on ssh connection

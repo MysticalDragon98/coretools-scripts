@@ -36,7 +36,7 @@ display_free_disk () {
 
 print ""
 
-display_free_cpu
+# display_free_cpu
 display_free_memory
 display_free_disk
 
